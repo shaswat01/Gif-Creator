@@ -6,7 +6,7 @@ clip = os.path.abspath('video.mp4')
 
 def gifMaker(inputPath, targetFormat):
 
-    outputPath = os.path.splitext(inputPath)[0] + targetFormat
+    outputPath = os.path.splitext(inputPath)[0] + targetFormat #To get the name of file and to put the deired format name to it.
     print(f"Converting {inputPath} \n to {outputPath}")
 
     reader = imageio.get_reader(inputPath)
